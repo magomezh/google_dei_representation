@@ -14,16 +14,18 @@ view: dar_non_intersectional_representation {
     sql: ${TABLE}.gender_global_male ;;
   }
 
-  dimension: gender_us_female {
-    type: number
+  measure: gender_us_female {
+    type: sum
     description: "The percentage of Googlers in the U.S. who identify as female"
     sql: ${TABLE}.gender_us_female ;;
+    value_format_name: percent_2
   }
 
-  dimension: gender_us_male {
-    type: number
+  measure: gender_us_male {
+    type: sum
     description: "The percentage of Googlers in the U.S. who identify as male"
     sql: ${TABLE}.gender_us_male ;;
+    value_format_name: percent_2
   }
 
   dimension: race_asian {
@@ -60,6 +62,7 @@ view: dar_non_intersectional_representation {
     type: number
     description: "The year the report was published"
     sql: ${TABLE}.report_year ;;
+    value_format_name: id
   }
 
   dimension: workforce {

@@ -50,13 +50,18 @@ view: dar_intersectional_representation {
     sql: ${TABLE}.workforce ;;
   }
 
+  # dimension: race {
+  #   type: string
+  #   # description: "Overall and sub-categories"
+  #   sql: ${TABLE}.workforce ;;
+  }
+
   # measure: report_year_sum {
   #   type: sum
   #   drill_fields: []
   # }
 
-  measure: count {
-    type: count
-    drill_fields: []
-  }
-}
+  # measure: count {
+  #   type: count
+  #   drill_fields: []
+  # }
