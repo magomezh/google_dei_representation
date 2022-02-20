@@ -16,7 +16,11 @@ explore: dar_non_intersectional_representation {}
 
 explore: dar_region_non_intersectional_hiring {}
 
-explore: dar_intersectional_representation {}
+explore: dar_intersectional_representation {
+  always_filter: {
+    filters: [dar_intersectional_representation.workforce: "representation_tech "]
+  }
+}
 
 explore: dar_intersectional_hiring {}
 

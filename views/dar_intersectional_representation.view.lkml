@@ -8,34 +8,40 @@ view: dar_intersectional_representation {
     sql: ${TABLE}.gender_us ;;
   }
 
-  dimension: race_asian {
-    type: number
+  measure: race_asian {
+    type: sum
     description: "The percentage of Googlers in the U.S. who identify as Asian"
     sql: ${TABLE}.race_asian ;;
+    value_format_name: percent_2
+
   }
 
-  dimension: race_black {
-    type: number
+  measure: race_black {
+    type: sum
     description: "The percentage of Googlers in the U.S. who identify as Black"
     sql: ${TABLE}.race_black ;;
+    value_format_name: percent_2
   }
 
-  dimension: race_hispanic_latinx {
-    type: number
+  measure: race_hispanic_latinx {
+    type: sum
     description: "The percentage of Googlers in the U.S. who identify as Hispanic or Latinx"
     sql: ${TABLE}.race_hispanic_latinx ;;
+    value_format_name: percent_2
   }
 
-  dimension: race_native_american {
-    type: number
+  measure: race_native_american {
+    type: sum
     description: "The percentage of Googlers in the U.S. who identify as Native American"
     sql: ${TABLE}.race_native_american ;;
+    value_format_name: percent_2
   }
 
-  dimension: race_white {
-    type: number
+  measure: race_white {
+    type: sum
     description: "The percentage of Googlers in the U.S. who identify as White"
     sql: ${TABLE}.race_white ;;
+    value_format_name: percent_2
   }
 
   dimension: report_year {
