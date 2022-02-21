@@ -10,43 +10,38 @@ view: dar_intersectional_representation {
     sql: ${TABLE}.gender_us ;;
   }
 
-  dimension: race_asian {
-    type: number
-    label: "Asian"
+  measure: race_asian {
+    type: sum
     description: "The percentage of Googlers in the U.S. who identify as Asian"
     sql: ${TABLE}.race_asian ;;
     value_format_name: percent_2
   }
 
-  dimension: race_black {
-    type: number
-    label: "African American"
+  measure: race_black {
+    type: sum
     description: "The percentage of Googlers in the U.S. who identify as Black"
     sql: ${TABLE}.race_black ;;
     value_format_name: percent_2
   }
 
-  dimension: race_hispanic_latinx {
-    type: number
-    label: "Hispanic/Latinx"
+  measure: race_hispanic_latinx {
+    type: sum
     description: "The percentage of Googlers in the U.S. who identify as Hispanic or Latinx"
     sql: ${TABLE}.race_hispanic_latinx ;;
     value_format_name: percent_2
   }
 
-  dimension: race_native_american {
-    type: number
-    label: "Native American"
+  measure: race_native_american {
+    type: sum
     description: "The percentage of Googlers in the U.S. who identify as Native American"
     sql: ${TABLE}.race_native_american ;;
     value_format_name: percent_2
   }
 
-  dimension: race_white {
-    type: number
-    label: "Caucasian"
+  measure: race_white {
+    type: sum
     description: "The percentage of Googlers in the U.S. who identify as White"
-    sql: ${TABLE}.race_white;;
+    sql: ${TABLE}.race_white ;;
     value_format_name: percent_2
   }
 
@@ -55,6 +50,8 @@ view: dar_intersectional_representation {
     label: "Report Year"
     description: "The year the report was published"
     sql: ${TABLE}.report_year ;;
+    value_format_name: id
+
   }
 #dimension that adds representation race numbers
   dimension: report_year_total {

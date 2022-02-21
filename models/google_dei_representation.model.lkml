@@ -9,14 +9,18 @@ datagroup: google_dei_representation_default_datagroup {
 }
 
 persist_with: google_dei_representation_default_datagroup
-  #one comment
+
 explore: dar_self_id {}
 
 explore: dar_non_intersectional_representation {}
 
 explore: dar_region_non_intersectional_hiring {}
 
-explore: dar_intersectional_representation {}
+explore: dar_intersectional_representation {
+  always_filter: {
+    filters: [dar_intersectional_representation.workforce: "representation_tech "]
+  }
+}
 
 explore: dar_intersectional_hiring {}
 
