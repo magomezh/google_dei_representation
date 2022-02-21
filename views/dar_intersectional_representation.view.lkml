@@ -15,6 +15,7 @@ view: dar_intersectional_representation {
     label: "Asian"
     description: "The percentage of Googlers in the U.S. who identify as Asian"
     sql: ${TABLE}.race_asian ;;
+    value_format_name: percent_2
   }
 
   dimension: race_black {
@@ -22,6 +23,7 @@ view: dar_intersectional_representation {
     label: "African American"
     description: "The percentage of Googlers in the U.S. who identify as Black"
     sql: ${TABLE}.race_black ;;
+    value_format_name: percent_2
   }
 
   dimension: race_hispanic_latinx {
@@ -29,6 +31,7 @@ view: dar_intersectional_representation {
     label: "Hispanic/Latinx"
     description: "The percentage of Googlers in the U.S. who identify as Hispanic or Latinx"
     sql: ${TABLE}.race_hispanic_latinx ;;
+    value_format_name: percent_2
   }
 
   dimension: race_native_american {
@@ -36,13 +39,15 @@ view: dar_intersectional_representation {
     label: "Native American"
     description: "The percentage of Googlers in the U.S. who identify as Native American"
     sql: ${TABLE}.race_native_american ;;
+    value_format_name: percent_2
   }
 
   dimension: race_white {
     type: number
     label: "Caucasian"
     description: "The percentage of Googlers in the U.S. who identify as White"
-    sql: ${TABLE}.race_white ;;
+    sql: ${TABLE}.race_white;;
+    value_format_name: percent_2
   }
 
   dimension: report_year {
