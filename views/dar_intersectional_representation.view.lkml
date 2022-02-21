@@ -48,6 +48,8 @@ view: dar_intersectional_representation {
     type: number
     description: "The year the report was published"
     sql: ${TABLE}.report_year ;;
+    value_format_name: id
+
   }
 
   dimension: workforce {
