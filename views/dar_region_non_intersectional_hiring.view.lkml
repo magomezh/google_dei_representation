@@ -16,6 +16,7 @@ view: dar_region_non_intersectional_hiring {
 
   dimension: region {
     type: string
+    map_layer_name: countries
     description: "Region"
     sql: ${TABLE}.region ;;
   }
