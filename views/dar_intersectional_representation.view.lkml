@@ -53,14 +53,7 @@ view: dar_intersectional_representation {
     value_format_name: id
 
   }
-#dimension that adds representation race numbers
-  dimension: report_year_total {
-    type: number
-    label: "Report Year Total"
-    description: "The total percentage of Googlers reported for that year"
-    sql: ${dar_intersectional_representation.race_asian} + ${dar_intersectional_representation.race_black} + ${dar_intersectional_representation.race_hispanic_latinx} + ${dar_intersectional_representation.race_native_american} + ${dar_intersectional_representation.race_white}  ;;
-    value_format_name: percent_2
-  }
+
 
   dimension: workforce {
     type: string
