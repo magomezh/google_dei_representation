@@ -7,6 +7,12 @@ view: stem_and_stem_related_occupations_by_sex_acs_20191 {
     sql: ${TABLE}.Estimate_men ;;
   }
 
+  # measure: estimate_men {
+  #   type: sum
+  #   # description: ""
+  #   sql: ${TABLE}.Estimate_men ;;
+  #   value_format_name: percent_2
+
   dimension: estimate_percentage_of_men_in_occupational_group {
     type: number
     sql: ${TABLE}.Estimate_percentage_of_men_in_occupational_group ;;
@@ -26,6 +32,13 @@ view: stem_and_stem_related_occupations_by_sex_acs_20191 {
     type: number
     sql: ${TABLE}.Estimate_women ;;
   }
+
+  # measure: estimate_women {
+  #   type: sum
+  #   # description: ""
+  #   sql: ${TABLE}.Estimate_women ;;
+  #   value_format_name: percent_2
+  # }
 
   dimension: moe_men {
     type: number
