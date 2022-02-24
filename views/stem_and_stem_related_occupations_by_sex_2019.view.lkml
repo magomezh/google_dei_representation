@@ -2,8 +2,13 @@ view: stem_and_stem_related_occupations_by_sex_2019 {
   sql_table_name: `sada-u-5.google_dei_hiring.stem_and_stem_related_occupations_by_sex_2019`
     ;;
 
-  dimension: estimate_men {
+  dimension: acs_year {
     type: number
+    sql: ${TABLE}.ACS_Year ;;
+  }
+
+  measure: estimate_men {
+    type: sum
     sql: ${TABLE}.Estimate_men ;;
   }
 
@@ -22,8 +27,8 @@ view: stem_and_stem_related_occupations_by_sex_2019 {
     sql: ${TABLE}.Estimate_total ;;
   }
 
-  dimension: estimate_women {
-    type: number
+  measure: estimate_women {
+    type: sum
     sql: ${TABLE}.Estimate_women ;;
   }
 
