@@ -1,23 +1,20 @@
-view: stem_and_stem_related_occupations_by_sex_acs_20191 {
-  sql_table_name: `sada-u-5.google_dei_hiring.stem_and_stem_related_occupations_by_sex_acs_20191`
+view: stem_and_stem_related_occupations_by_sex_2019 {
+  sql_table_name: `sada-u-5.google_dei_hiring.stem_and_stem_related_occupations_by_sex_2019`
     ;;
 
   dimension: estimate_men {
     type: number
     sql: ${TABLE}.Estimate_men ;;
-    # value_format_name:
   }
 
   dimension: estimate_percentage_of_men_in_occupational_group {
     type: number
     sql: ${TABLE}.Estimate_percentage_of_men_in_occupational_group ;;
-    # value_format_name: percent_2
   }
 
   dimension: estimate_percentage_of_women_in_occupational_group {
     type: number
     sql: ${TABLE}.Estimate_percentage_of_women_in_occupational_group ;;
-    # value_format_name: percent_2
   }
 
   dimension: estimate_total {
@@ -28,7 +25,6 @@ view: stem_and_stem_related_occupations_by_sex_acs_20191 {
   dimension: estimate_women {
     type: number
     sql: ${TABLE}.Estimate_women ;;
-    # value_format_name: id
   }
 
   dimension: moe_men {

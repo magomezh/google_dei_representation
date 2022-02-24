@@ -26,4 +26,4 @@ explore: dar_intersectional_hiring {}
 
 explore: dar_non_intersectional_hiring {}
 
-explore: stem_and_stem_related_occupations_by_sex_acs_20191 {}
+explore: stem_and_stem_related_occupations_by_sex_2019 {}
