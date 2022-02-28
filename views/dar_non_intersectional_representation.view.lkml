@@ -22,7 +22,7 @@ view: dar_non_intersectional_representation {
   }
 
   measure: gender_us_male {
-    type: number
+    type: sum
     description: "The percentage of Googlers in the U.S. who identify as male"
     sql: ${TABLE}.gender_us_male ;;
     value_format_name: percent_2
