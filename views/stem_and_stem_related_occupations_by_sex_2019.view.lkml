@@ -22,8 +22,8 @@ view: stem_and_stem_related_occupations_by_sex_2019 {
     sql: ${TABLE}.Estimate_percentage_of_women_in_occupational_group ;;
   }
 
-  dimension: estimate_total {
-    type: number
+  measure: estimate_total {
+    type: sum
     sql: ${TABLE}.Estimate_total ;;
   }
 
